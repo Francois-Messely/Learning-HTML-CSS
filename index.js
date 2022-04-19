@@ -1,12 +1,8 @@
 const btn = document.getElementById('btn');
 
-// ✅ Toggle button text on click
+// ✅ Change button text on click
 btn.addEventListener('click', function handleClick() {
-  const initialText = 'Click me';
+  
 
-  if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
-    btn.textContent = 'Button clicked';
-  } else {
-    btn.textContent = initialText;
-  }
+  btn.innerHTML = `<span style="background-color: grey">Can't wait to talk &#128513<span>`;
 });
